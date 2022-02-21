@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8824F427B5871D00775EAE /* MetaWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8824F327B5871D00775EAE /* MetaWeatherAPI.swift */; };
+		BB8824F627B587B400775EAE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8824F527B587B400775EAE /* NetworkManager.swift */; };
+		BB8824F927B58B3200775EAE /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8824F827B58B3200775EAE /* WeatherResponse.swift */; };
+		BB8824FB27B58CCE00775EAE /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8824FA27B58CCE00775EAE /* WeatherView.swift */; };
+		BB8824FD27B58CE100775EAE /* WeatherViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8824FC27B58CE100775EAE /* WeatherViewViewModel.swift */; };
 		BBEB2E7B27B55C6600F26A2C /* MemberdWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB2E7A27B55C6600F26A2C /* MemberdWeatherApp.swift */; };
 		BBEB2E7D27B55C6600F26A2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB2E7C27B55C6600F26A2C /* ContentView.swift */; };
 		BBEB2E7F27B55C6700F26A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEB2E7E27B55C6700F26A2C /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8824F327B5871D00775EAE /* MetaWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherAPI.swift; sourceTree = "<group>"; };
+		BB8824F527B587B400775EAE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB8824F827B58B3200775EAE /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		BB8824FA27B58CCE00775EAE /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		BB8824FC27B58CE100775EAE /* WeatherViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewViewModel.swift; sourceTree = "<group>"; };
 		BBEB2E7727B55C6600F26A2C /* MemberdWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemberdWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEB2E7A27B55C6600F26A2C /* MemberdWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberdWeatherApp.swift; sourceTree = "<group>"; };
 		BBEB2E7C27B55C6600F26A2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8824F027B586DC00775EAE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BB8824F327B5871D00775EAE /* MetaWeatherAPI.swift */,
+				BB8824F527B587B400775EAE /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BB8824F127B586E600775EAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB8824FA27B58CCE00775EAE /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB8824F227B586ED00775EAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB8824FC27B58CE100775EAE /* WeatherViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB8824F727B58B0600775EAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB8824F827B58B3200775EAE /* WeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BBEB2E6E27B55C6600F26A2C = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +96,10 @@
 			children = (
 				BBEB2E7A27B55C6600F26A2C /* MemberdWeatherApp.swift */,
 				BBEB2E7C27B55C6600F26A2C /* ContentView.swift */,
+				BB8824F727B58B0600775EAE /* Models */,
+				BB8824F127B586E600775EAE /* Views */,
+				BB8824F227B586ED00775EAE /* ViewModels */,
+				BB8824F027B586DC00775EAE /* Network */,
 				BBEB2E7E27B55C6700F26A2C /* Assets.xcassets */,
 				BBEB2E8027B55C6700F26A2C /* Preview Content */,
 			);
@@ -137,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8824FD27B58CE100775EAE /* WeatherViewViewModel.swift in Sources */,
+				BB8824F627B587B400775EAE /* NetworkManager.swift in Sources */,
+				BB8824F927B58B3200775EAE /* WeatherResponse.swift in Sources */,
 				BBEB2E7D27B55C6600F26A2C /* ContentView.swift in Sources */,
+				BB8824FB27B58CCE00775EAE /* WeatherView.swift in Sources */,
+				BB8824F427B5871D00775EAE /* MetaWeatherAPI.swift in Sources */,
 				BBEB2E7B27B55C6600F26A2C /* MemberdWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
